@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="box">check1</label>
+            <input type="checkbox" value="check1" v-model="check1" id="box">
+            <label for="box1">check2</label>
+            <input type="checkbox" value="check2" v-model="check2" id="box1">
+            <label for="box2">check3</label>
+            <input type="checkbox" value="check3" v-model="check3" id="box2">
+
+            <button :class="{'btn btn-primary acitve':check1&&check2&&check3,'disabled btn btn-primary':!check1|| !check2 || !check3}">button</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
