@@ -23,7 +23,6 @@
         <form action="">
             <label for="name">Name</label>
             <input type="text" id="name" class="form-control">
-
             <label for="image">Image Url</label>
             <input type="text" id="image" class="form-control">
         </form>
@@ -40,15 +39,15 @@
         </ul>
 
         <!-- The slideshow -->
-        <div class="carousel-inner"  v-for="item in carusel">
+        <div class="carousel-inner">
             <div class="carousel-item active">
-                <img v-bind:src="item.image" alt="{{item.name}}">
+                <img v-bind:src="image1" >
             </div>
             <div class="carousel-item ">
-                <img v-bind:src="item.image" alt="{{item.name}}">
+                <img v-bind:src="image2" >
             </div>
             <div class="carousel-item">
-                <img v-bind:src="item.image" alt="{{item.name}}">
+                <img v-bind:src="image3">
             </div>
         </div>
 

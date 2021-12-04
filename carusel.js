@@ -2,6 +2,9 @@
 new Vue({
     el:".container",
     data:{
+        image1:"https://wallpaperaccess.com/full/31189.jpg",
+        image2:"https://wallpaperaccess.com/full/969650.jpg",
+        image3:"https://i.imgur.com/hunyCzO.jpg",
 
         carusel:[
             {
